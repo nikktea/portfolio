@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Nikita Akulinin — web apps, dashboards, UI/UX design, and mobile projects.">
+    <meta name="theme-color" content="#7c5cff">
+    <title>Work — Nikita Akulinin</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='26' fill='url(%23g)'/%3E%3Ctext x='50' y='70' font-family='sans-serif' font-size='58' font-weight='700' fill='white' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="brand" aria-label="Nikita Akulinin — home"><span class="brand-mark">NA</span><span class="brand-name">Nikita<span>.</span></span></a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link active">Work</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                </button>
+                <a href="contact.html" class="btn btn-primary nav-cta">Let's talk</a>
+                <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="aurora"></div>
+        <div class="grid-fade"></div>
+        <div class="container">
+            <div class="breadcrumb"><a href="index.html">Home</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><span>Work</span></div>
+            <h1>Selected <span class="grad-text">work</span></h1>
+            <p>Products I've designed and built — from e-commerce to dashboards and mobile apps.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <article class="portfolio-item reveal" data-category="web">
+                    <div class="portfolio-image">
+                        <span class="portfolio-cat">Web App</span>
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=440&fit=crop" alt="E-commerce platform" loading="lazy">
+                        <div class="portfolio-overlay"><div class="portfolio-links"><a href="case-study.html" class="portfolio-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg> Case study</a><a href="#" class="portfolio-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg> Live</a></div></div>
+                    </div>
+                    <div class="portfolio-info"><h3>NovaShop — E-commerce</h3><p>Full-featured online store with cart, Stripe checkout, and an admin panel.</p><div class="portfolio-tech"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div></div>
+                </article>
+
+                <article class="portfolio-item reveal" data-d="1" data-category="design">
+                    <div class="portfolio-image">
+                        <span class="portfolio-cat">Design</span>
+                        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=700&h=440&fit=crop" alt="Fitness app design" loading="lazy">
+                        <div class="portfolio-overlay"><div class="portfolio-links"><a href="case-study.html" class="portfolio-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg> Case study</a></div></div>
+                    </div>
+                    <div class="portfolio-info"><h3>FitFlow — Mobile UI</h3><p>UI/UX design for a workout-tracking app with a clean, motivating interface.</p><div class="portfolio-tech"><span>Figma</span><span>UI/UX</span><span>Prototyping</span></div></div>
+                </article>
+
+                <article class="portfolio-item reveal" data-d="2" data-category="web">
+                    <div class="portfolio-image">
+                        <span class="portfolio-cat">Dashboard</span>
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=440&fit=crop" alt="Analytics dashboard" loading="lazy">
+                        <div class="portfolio-overlay"><div class="portfolio-links"><a href="case-study.html" class="portfolio-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg> Case study</a></div></div>
+                    </div>
+                    <div class="portfolio-info"><h3>Pulse — Analytics</h3><p>Interactive dashboard for real-time data visualization and business insights.</p><div class="portfolio-tech"><span>JavaScript</span><span>D3.js</span><span>Chart.js</span></div></div>
+                </article>
+
+                <article class="portfolio-item reveal" data-category="mobile">
+                    <div class="portfolio-image">
+                        <span class="portfolio-cat">Mobile</span>
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&h=440&fit=crop" alt="Recipe app" loading="lazy">
+                        <div class="portfolio-overlay"><div class="portfolio-links"><a href="case-study.html" class="portfolio-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg> Case study</a></div></div>
+                    </div>
+                    <div class="portfolio-info"><h3>Saveur — Recipe App</h3><p>Mobile app for discovering, searching, and saving cooking recipes.</p><div class="portfolio-tech"><span>React Native</span><span>API</span></div></div>
+                </article>
+
+                <article class="portfolio-item reveal" data-d="1" data-category="web">
+                    <div class="portfolio-image">
+                        <span class="portfolio-cat">Web App</span>
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=700&h=440&fit=crop" alt="Blog CMS" loading="lazy">
+                        <div class="portfolio-overlay"><div class="portfolio-links"><a href="case-study.html" class="portfolio-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg> Case study</a></div></div>
+                    </div>
+                    <div class="portfolio-info"><h3>Inkwell — Blog CMS</h3><p>Content management system with a rich editor and article publishing flow.</p><div class="portfolio-tech"><span>Next.js</span><span>PostgreSQL</span></div></div>
+                </article>
+
+                <article class="portfolio-item reveal" data-d="2" data-category="design">
+                    <div class="portfolio-image">
+                        <span class="portfolio-cat">Branding</span>
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=700&h=440&fit=crop" alt="Startup branding" loading="lazy">
+                        <div class="portfolio-overlay"><div class="portfolio-links"><a href="case-study.html" class="portfolio-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg> Case study</a></div></div>
+                    </div>
+                    <div class="portfolio-info"><h3>Lumen — Brand Identity</h3><p>Complete brand design including logo, colour system, and visual identity.</p><div class="portfolio-tech"><span>Branding</span><span>Logo</span><span>Identity</span></div></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section section--soft">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Testimonials</span>
+                <h2 class="section-title">Trusted by clients</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg></div>
+                    <div class="testimonial-content"><p>"Nikita delivered our corporate website ahead of schedule. The code is clean, well-documented, and the design exceeded our expectations."</p></div>
+                    <div class="testimonial-author"><div class="author-avatar"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Alex Petrov"></div><div class="author-info"><h4>Alex Petrov</h4><span>CEO, TechCorp</span></div></div>
+                </div>
+                <div class="testimonial-card reveal" data-d="1">
+                    <div class="testimonial-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg></div>
+                    <div class="testimonial-content"><p>"Amazing designer! Created a stunning UI for our mobile app. Every requirement was considered and the result was beyond what we imagined."</p></div>
+                    <div class="testimonial-author"><div class="author-avatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Maria Ivanova"></div><div class="author-info"><h4>Maria Ivanova</h4><span>Product Manager, AppStudio</span></div></div>
+                </div>
+                <div class="testimonial-card reveal" data-d="2">
+                    <div class="testimonial-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.8.6-5.1 4.5 1.5 6.7L12 17.8 5.9 20.6l1.5-6.7L2.3 8.9l6.8-.6z"/></svg></div>
+                    <div class="testimonial-content"><p>"Professional, communicative, and reliable. Tasks were completed on time and the quality was outstanding. Highly recommend!"</p></div>
+                    <div class="testimonial-author"><div class="author-avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Dmitry Sidorov"></div><div class="author-info"><h4>Dmitry Sidorov</h4><span>Founder, StartupXYZ</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container">
+            <div class="cta reveal">
+                <div class="cta-content">
+                    <h2>Like what you see?</h2>
+                    <p>Your project could be the next one in this gallery. Let's make it happen.</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg">Start a project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand"><span class="brand-mark">NA</span><span class="brand-name">Nikita<span>.</span></span></a>
+                    <p>Web developer &amp; UI/UX designer creating digital experiences that matter. Available for freelance projects worldwide.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/nikktea" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12c0 4.6 3 8.4 7.2 9.8.5.1.7-.2.7-.5v-1.7c-2.9.6-3.5-1.4-3.5-1.4-.4-1-1-1.3-1-1.3-.8-.5.1-.5.1-.5.9.1 1.3 1 1.3 1 .8 1.3 2.1.9 2.6.7.1-.6.3-.9.5-1.1-2.3-.3-4.7-1.1-4.7-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.8 1 .8-.2 1.6-.3 2.4-.3s1.6.1 2.4.3c2-1.3 2.8-1 2.8-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.7 5 .3.3.6.8.6 1.6v2.3c0 .3.2.6.7.5 4.2-1.4 7.2-5.2 7.2-9.8 0-5.8-4.7-10.5-10.5-10.5z"/></svg></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.6 4.1 5.5 3 5.5S1 4.6 1 3.5 1.9 1.5 3 1.5s1.98.9 1.98 2zM2 8h2V22H2V8zm6 0h1.9v1.9h.1C10.4 8.8 11.7 8 13.4 8 17 8 18 10.3 18 13.4V22h-2V13.9c0-2-0.4-3.4-2.4-3.4-1.3 0-2.2.9-2.6 1.8-.1.2-.1.6-.1.9V22H8V8z"/></svg></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon" aria-label="Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 6.1c-.7.3-1.4.5-2.1.6.8-.5 1.3-1.1 1.6-2-.7.4-1.5.7-2.3.8-.7-.7-1.7-1.2-2.8-1.2-2.1 0-3.7 1.7-3.7 3.7 0 .3 0 .6.1.9-3-.1-5.6-1.6-7.4-3.9-.3.5-.4 1.1-.4 1.8 0 1.3.7 2.4 1.7 3.1-.6 0-1.1-.2-1.6-.4 0 1.8 1.3 3.3 3.1 3.6-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.4 1.8 2.5 3.4 2.5-1.3 1-3 1.6-4.8 1.6-.3 0-.6 0-.9-.1 1.7 1.1 3.7 1.7 5.8 1.7 6.9 0 10.6-5.8 10.6-10.8v-.5c.7-.5 1.3-1.1 1.8-1.8z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col"><h4>Navigation</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Work</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Web Development</a></li><li><a href="services.html">UI/UX Design</a></li><li><a href="services.html">Backend &amp; APIs</a></li><li><a href="services.html">Consulting</a></li></ul></div>
+                <div class="footer-col"><h4>Get in touch</h4><p>nikitaakulinin645@gmail.com</p><p>Bulgaria · EET (UTC+2)</p><a href="contact.html" class="btn btn-primary" style="margin-top:8px">Let's talk</a></div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> Nikita Akulinin. All rights reserved.</span>
+                <span class="made">Designed &amp; built with <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.7-4.3-9.3-8.1C.9 10.2 1.6 6.6 4.4 5.3 6.5 4.3 9 5 12 8c3-3 5.5-3.7 7.6-2.7 2.8 1.3 3.5 4.9 1.7 7.6C18.7 16.7 12 21 12 21z"/></svg> by Nikita</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
