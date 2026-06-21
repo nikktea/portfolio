@@ -51,10 +51,16 @@
         <div class="container">
             <div class="featured-project reveal">
                 <div class="fp-media">
-                    <span class="fp-badge"><span class="live-dot"></span> Flagship · Live</span>
-                    <a href="https://maystori.bg" target="_blank" rel="noopener" aria-label="Open Maystori.bg">
-                        <img src="assets/maystori.png" alt="Maystori.bg — services marketplace homepage" width="1200" height="750" fetchpriority="high">
-                    </a>
+                    <div class="fp-frame">
+                        <div class="fp-bar">
+                            <span class="dots"><i></i><i></i><i></i></span>
+                            <span class="url">maystori.bg</span>
+                            <span class="fp-live"><span class="live-dot"></span> Live</span>
+                        </div>
+                        <a href="https://maystori.bg" target="_blank" rel="noopener" aria-label="Open Maystori.bg">
+                            <img class="fp-shot" src="assets/maystori.png" alt="Maystori.bg — services marketplace homepage" width="1200" height="750" fetchpriority="high">
+                        </a>
+                    </div>
                 </div>
                 <div class="fp-body">
                     <span class="eyebrow">Featured project</span>
@@ -80,11 +86,6 @@
     <!-- MORE PROJECTS -->
     <section class="section">
         <div class="container">
-            <div class="section-head reveal">
-                <span class="eyebrow">More work</span>
-                <h2 class="section-title">Browse all projects</h2>
-                <p class="section-sub">Filter by type to explore what I've designed and built.</p>
-            </div>
             <div class="portfolio-filters reveal">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="web">Web Apps</button>
